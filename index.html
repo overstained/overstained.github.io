@@ -55,34 +55,34 @@
             </div>
             <ul>
                 <li>
-                    Redesigned our legacy Java FIX routing service
+                    Re-designed our legacy routing engine
+                    <ul>
+                        <li>
+                            moved to hexagonal architecture
+                        </li>
+                        <li>
+                            migrated from Java to Kotlin
+                        </li>
+                        <li>
+                            upgraded runtime from JRE 7 to JRE 17
+                        </li>
+                    </ul>
                 </li>
-                <ul>
-                    <li>
-                        moved architecture to ports and adapters
-                    </li>
-                    <li>
-                        pipelined the message processing paths
-                    </li>
-                    <li>
-                        migrated from Java to Kotlin
-                    </li>
-                    <li>
-                        ensure production-ready
-                    </li>
-                </ul>
                 </br>
                 <li>
-                    Performance optimization of Fixed income pricing flow (~1 million messages per day)         
+                    Optimized performance for Fixed Income pricing flow (6k msg/s from 400 msg/s)
+                    <ul>
+                        <li>
+                            ensure our FIX engine can handle sudden bursts of messages
+                        </li>
+                        <li>
+                            decreased heap allocations to prevent GC-caused unresponsiveness 
+                        </li>
+                        <li>
+                            optimized messaging protocol
+                        </li>
+                    </ul>
                 </li>
-                <ul>
-                    <li>
-                        ensure our FIX engine can handle sudden bursts of messages
-                    </li>
-                    <li>
-                        decreased heap allocations to prevent GC-caused unresponsiveness 
-                    </li>
-                </ul>
             </ul>
         </div>
         <br/>
