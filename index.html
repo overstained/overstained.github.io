@@ -55,7 +55,7 @@
             </div>
             <ul>
                 <li>
-                    Re-designed our legacy routing engine
+                    Re-designed our legacy FIX routing engine
                     <ul>
                         <li>
                             moved to hexagonal architecture
@@ -73,15 +73,22 @@
                     Optimized performance for Fixed Income pricing flow (6k msg/s from 400 msg/s)
                     <ul>
                         <li>
-                            ensure our FIX engine can handle sudden bursts of messages
+                            ensured our FIX engine can handle sudden bursts of messages
                         </li>
                         <li>
                             decreased heap allocations to prevent GC-caused unresponsiveness 
                         </li>
                         <li>
-                            optimized network layer
+                            eliminated resource contention on hot paths and replaced several concurrent data structures with lock-free alternatives
+                        </li>
+                        <li>
+                            optimized network layer by reducing buffer copies and payload size
                         </li>
                     </ul>
+                </li>
+                </br>
+                <li>
+                    Migrated some of our back-office management tools from Swing to React with Typescript
                 </li>
             </ul>
         </div>
